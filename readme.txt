@@ -1,4 +1,0 @@
-1. dataset:electricity.csv and water_pressure.csv in resource/data.
-2. open CMTS_for_electrity/Const.py, set device to CPU，Change target_time_window to 6,12,18,24 in turn, and then run dataPreparation.py respectively. Run 4 times, and automatically generate 4 sets of preprocessed datasets (train|dev|test), and change the device back to GPU after running.
-3. open CMTS_for_water/Const.py. The preprocess is the same as step 2.
-4. There are 2 datasets. For each horizon, change the target_time_window to 6,12,18,24, and run the Invoker once, each time as a copy, a total of 2*4=8 copies. The experimental results of each copy are generated in resource/Result_models, such as the CMTS4water/complete/6h folder, there are 30 TS in total. And finally generate mae.log and rmse.log for each target TS as the experimental results.
